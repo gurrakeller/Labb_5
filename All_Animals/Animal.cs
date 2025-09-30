@@ -26,13 +26,19 @@ public class Animal
     {
         return $"Here's your animal! \nName: {Name}\nAge: {Age}\nSound: {Sound}\nSize: {Size}\nWeight in kg: {KgWeight} ";
     }
-    
-    
-    
-    
-    
-    
-    
+
+    public string AnimalWeight()
+    {
+        if (KgWeight < 10 && KgWeight > 5)
+        {
+            return $"{Name} is quite heavy!";
+        }
+        else if(KgWeight < 5)
+        {
+            return $"{Name} is quite small!";
+        }
+            return $"{Name} very big!";
+    }
     
     
 }
